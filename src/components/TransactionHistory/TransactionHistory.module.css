@@ -1,0 +1,28 @@
+.table,
+.table th,
+.table td {
+    border: 1px solid black;
+}
+
+.table {
+    border: 1px solid #333;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+
+    tr {
+        &:nth-child(even) {
+            background-color: #aaa;
+        }
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    th {
+        color: white;
+        background-color: #333;
+    }
+}

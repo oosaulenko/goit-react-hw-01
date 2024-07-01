@@ -1,0 +1,18 @@
+.item {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 12px;
+
+    .title {
+        font-size: 24px;
+        margin-top: 12px;
+    }
+}
+
+.isOnline {
+    color: green;
+}
+
+.isOffline {
+    color: red;
+}

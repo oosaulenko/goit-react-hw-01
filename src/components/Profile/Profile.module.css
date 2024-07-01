@@ -1,0 +1,63 @@
+.profile {
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+
+    .header {
+        padding: 12px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #333;
+    }
+
+    .name {
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 12px;
+    }
+
+    .tag, .location {
+        color: #aaa;
+    }
+
+    .tag {
+        margin-top: 12px;
+    }
+
+    .location {
+        margin-top: 6px;
+    }
+
+    .meta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #ccc;
+        border-top: 2px solid #aaa;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 12px;
+            border-right: 2px solid #aaa;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            span {
+                &:last-child {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
